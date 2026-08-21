@@ -1,0 +1,6 @@
+{
+  "name": "Wild Coffee",
+  "description": "A modern, premium coffee house experience crafting artisanal coffee, specialty brews, and cozy moments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

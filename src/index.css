@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-display: 'Cinzel', serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #120c08;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2e1d13;
+  border-radius: 4px;
+  border: 2px solid #120c08;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c58b4e;
+}
+
+/* Gentle ambient coffee glow */
+.coffee-glow {
+  box-shadow: 0 0 50px -10px rgba(197, 139, 78, 0.15);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #dfa86a 0%, #c58b4e 50%, #9e642a 100%);
+}
+
+.wood-card {
+  background: linear-gradient(145deg, rgba(38, 26, 18, 0.7) 0%, rgba(24, 16, 11, 0.85) 100%);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 167, 110, 0.12);
+}
+
+.wood-card:hover {
+  border-color: rgba(212, 167, 110, 0.3);
+}
+
+/* Subtle steam animation */
+@keyframes steam {
+  0% {
+    transform: translateY(0) scaleX(1);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.6;
+  }
+  60% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-24px) scaleX(1.4);
+    opacity: 0;
+  }
+}
+
+.animate-steam {
+  animation: steam 3.5s ease-out infinite;
+}
+
